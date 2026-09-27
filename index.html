@@ -3,39 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【緊急速報】超総合ポータル・カオス大百科.com 🔥【閲覧注意】</title>
+    <title>【最新】超総合ポータル・トレンド大百科 🔥 ガジェット・ニュース・セール速報</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;900&family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'M PLUS Rounded 1c', sans-serif;
-            background: #ff00ff;
-            background: linear-gradient(135deg, #ff00ff 0%, #00ffff 50%, #ffff00 100%);
-            animation: bgShift 10s infinite alternate;
-        }
-        @keyframes bgShift {
-            0% { filter: hue-rotate(0deg); }
-            100% { filter: hue-rotate(360deg); }
-        }
-        .retro-font {
-            font-family: 'DotGothic16', monospace;
-        }
-        .blink {
-            animation: blinker 0.6s linear infinite;
-        }
-        @keyframes blinker {
-            50% { opacity: 0; }
-        }
-        .shake {
-            animation: shake 0.5s infinite;
-        }
-        @keyframes shake {
-            0% { transform: translate(1px, 1px) rotate(0deg); }
-            20% { transform: translate(-3px, 0px) rotate(1deg); }
-            40% { transform: translate(1px, -1px) rotate(-1deg); }
-            60% { transform: translate(-1px, 2px) rotate(0deg); }
-            80% { transform: translate(-3px, 1px) rotate(1deg); }
-            100% { transform: translate(1px, -2px) rotate(-1deg); }
+            background: #f0f2f5;
         }
         .marquee {
             white-space: nowrap;
@@ -45,371 +19,347 @@
         .marquee span {
             display: inline-block;
             padding-left: 100%;
-            animation: marquee 15s linear infinite;
+            animation: marquee 20s linear infinite;
         }
         @keyframes marquee {
             0% { transform: translate(0, 0); }
             100% { transform: translate(-100%, 0); }
         }
-        .rainbow-text {
-            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: rainbow 3s linear infinite;
+        .blink {
+            animation: blinker 1s linear infinite;
         }
-        @keyframes rainbow {
-            0% { filter: hue-rotate(0deg); }
-            100% { filter: hue-rotate(360deg); }
+        @keyframes blinker {
+            50% { opacity: 0.3; }
         }
     </style>
 </head>
-<body class="text-gray-900 pb-20">
+<body class="text-gray-900 pb-24">
 
-    <div class="bg-black text-yellow-300 font-bold py-2 px-4 border-b-4 border-red-600 text-sm md:text-base flex items-center justify-between">
+    <!-- トップニュースティッカー -->
+    <div class="bg-slate-900 text-yellow-400 font-bold py-2 px-4 border-b-2 border-red-500 text-sm flex items-center justify-between">
         <div class="flex items-center space-x-2">
-            <span class="bg-red-600 text-white px-2 py-0.5 rounded text-xs blink">【緊急速報】</span>
-            <div class="marquee overflow-hidden w-64 md:w-[600px]">
-                <span class="inline-block">🚨日本列島上空に謎の巨大プリン襲来！専門家「スプーンの準備を急げ」⚠️昨日の記憶が消える現象が多発中！お使いのブラウザは非常に危険な状態です⚠️</span>
+            <span class="bg-red-600 text-white px-2 py-0.5 rounded text-xs blink">速報</span>
+            <div class="marquee overflow-hidden w-64 md:w-[700px]">
+                <span class="inline-block">📢 【Amazonタイムセール祭り】本日最終日！Anker製急速充電器が過去最安値を更新中 ⚡️ 総務省、新スマホ割引ルールの見直し案を発表 📱 話題の「ワンオペ育児効率化ガジェット」がクラウドファンディングで目標金額突破！</span>
             </div>
         </div>
-        <div class="hidden md:block retro-font text-green-400">
-            アクセス人数: <span id="counter">89314514</span>人
+        <div class="hidden lg:block text-xs text-slate-400">
+            更新日時: 2026年9月27日 19:15
         </div>
     </div>
 
-    <header class="bg-yellow-400 border-b-8 border-red-500 p-4 shadow-2xl">
+    <!-- ヘッダーメイン -->
+    <header class="bg-white border-b-4 border-blue-600 shadow-md p-4 sticky top-0 z-40">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center space-x-3">
-                <div class="bg-red-600 text-white text-3xl font-black p-3 rounded-xl transform -rotate-3 shadow-lg border-4 border-white shake">
-                    超🔥
+                <div class="bg-blue-600 text-white text-2xl font-black p-2.5 rounded-xl shadow">
+                    速報
                 </div>
                 <div>
-                    <h1 class="text-3xl md:text-5xl font-black tracking-wider text-red-700 drop-shadow-[0_2px_2px_rgba(255,255,255,0.8)]">
-                        カオス大百科<span class="text-blue-600">.com</span>
+                    <h1 class="text-2xl md:text-4xl font-black tracking-tight text-blue-900">
+                        トレンド大百科<span class="text-orange-500">.com</span>
                     </h1>
-                    <p class="text-xs md:text-sm font-bold text-black bg-white px-2 py-0.5 rounded inline-block mt-1">
-                        ✨ ネットのゴミ箱と最先端トレンドの交差点 ✨
+                    <p class="text-xs font-bold text-gray-500">
+                        ガジェット・ニュース・お得情報・ライフハックのすべてがここに
                     </p>
                 </div>
             </div>
 
-            <!-- Ticker -->
-            <div class="bg-black text-green-400 retro-font p-2 rounded-lg border-2 border-green-500 text-xs md:text-sm w-full md:w-96 overflow-hidden">
-                <div class="text-red-400 font-bold mb-1">📈 リアルタイム乱高下相場</div>
-                <div class="flex justify-between space-x-4 animate-pulse">
-                    <span>猫コイン: <span id="coin-cat" class="text-yellow-300">12,450円</span> <span id="cat-diff" class="text-green-400">+12%</span></span>
-                    <span>睡眠欲株: <span id="coin-sleep" class="text-yellow-300">890円</span> <span id="sleep-diff" class="text-red-500">-45%</span></span>
+            <!-- 検索バー・クイック株価 -->
+            <div class="flex items-center gap-2 w-full md:w-auto">
+                <div class="relative flex-1 md:w-80">
+                    <input type="text" placeholder="キーワード検索（例：iPhone, 割引, ラーメン）" class="w-full bg-gray-100 border-2 border-gray-300 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:border-blue-500">
                 </div>
+                <button onclick="showAlert('検索機能は準備中です')" class="bg-blue-600 text-white font-bold px-4 py-1.5 rounded-lg text-sm hover:bg-blue-700 transition">
+                    検索
+                </button>
             </div>
         </div>
     </header>
 
-    <nav class="bg-blue-900 text-white border-b-4 border-yellow-300 sticky top-0 z-40 shadow-xl overflow-x-auto">
-        <div class="max-w-7xl mx-auto flex whitespace-nowrap p-2 gap-2">
-            <button onclick="switchTab('all')" class="tab-btn bg-red-600 px-4 py-2 rounded-lg font-bold hover:bg-red-500 transition shadow border-b-2 border-black">総合トップ</button>
-            <button onclick="switchTab('news')" class="tab-btn bg-purple-600 px-4 py-2 rounded-lg font-bold hover:bg-purple-500 transition shadow">📰 虚構ニュース</button>
-            <button onclick="switchTab('2ch')" class="tab-btn bg-green-600 px-4 py-2 rounded-lg font-bold hover:bg-green-500 transition shadow">💬 2ちゃんまとめ</button>
-            <button onclick="switchTab('fortune')" class="tab-btn bg-pink-600 px-4 py-2 rounded-lg font-bold hover:bg-pink-500 transition shadow">🔮 今日のヤバい占い</button>
-            <button onclick="switchTab('gourmet')" class="tab-btn bg-yellow-600 px-4 py-2 rounded-lg font-bold hover:bg-yellow-500 transition shadow">🍜 飯テロ・無限大</button>
-            <button onclick="spawnPopup()" class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-black hover:bg-yellow-300 animate-bounce">🎁 宝くじ当選確認</button>
+    <!-- カテゴリータブ -->
+    <nav class="bg-slate-800 text-white border-b border-gray-700 shadow-inner overflow-x-auto">
+        <div class="max-w-7xl mx-auto flex whitespace-nowrap p-2 gap-2 text-sm font-bold">
+            <button class="bg-blue-600 px-4 py-1.5 rounded-lg hover:bg-blue-500 transition">総合トップ</button>
+            <button class="bg-slate-700 px-4 py-1.5 rounded-lg hover:bg-slate-600 transition">📱 ガジェット・PC</button>
+            <button class="bg-slate-700 px-4 py-1.5 rounded-lg hover:bg-slate-600 transition">💰 経済・マネー</button>
+            <button class="bg-slate-700 px-4 py-1.5 rounded-lg hover:bg-slate-600 transition">🛒 セール・お買い得</button>
+            <button class="bg-slate-700 px-4 py-1.5 rounded-lg hover:bg-slate-600 transition">💡 ライフハック</button>
+            <button class="bg-slate-700 px-4 py-1.5 rounded-lg hover:bg-slate-600 transition">🍜 グルメ・トレンド</button>
+            <button class="bg-slate-700 px-4 py-1.5 rounded-lg hover:bg-slate-600 transition">🚗 クルマ・乗り物</button>
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-4 gap-6 mt-4">
+    <!-- メイングリッドレイアウト -->
+    <main class="max-w-7xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-4 gap-6 mt-2">
 
-        <!-- Left Sidebar: Weather & Widgets -->
+        <!-- 左サイドバー：天気・株価・ランキング -->
         <div class="space-y-6">
-            <!-- Weather Widget -->
-            <div class="bg-white/90 backdrop-blur border-4 border-blue-500 rounded-2xl p-4 shadow-xl">
-                <h3 class="font-black text-lg text-blue-700 border-b-2 border-blue-200 pb-1 mb-2">🌤️ 全国お天気カオス</h3>
+            <!-- 天気予報 -->
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-sm">
+                <h3 class="font-black text-sm text-blue-900 border-b pb-2 mb-3 flex justify-between items-center">
+                    <span>🌤️ 全国の天気予報</span>
+                    <span class="text-xs text-gray-400 font-normal">気象庁データ</span>
+                </h3>
                 <div class="space-y-2 text-sm">
-                    <div class="flex justify-between items-center bg-blue-50 p-2 rounded"><span>東京 (晴れのち隕石)</span><span class="text-red-500 font-bold">42℃ 🔥</span></div>
-                    <div class="flex justify-between items-center bg-blue-50 p-2 rounded"><span>大阪 (たこ焼きの雨)</span><span class="text-blue-600 font-bold">120% 🐙</span></div>
-                    <div class="flex justify-between items-center bg-blue-50 p-2 rounded"><span>北極 (マグマ噴出)</span><span class="text-orange-500 font-bold">999℃ 🌋</span></div>
+                    <div class="flex justify-between items-center p-2 bg-gray-50 rounded"><span>東京 晴れ / 降水10%</span><span class="font-bold text-orange-500">28℃</span></div>
+                    <div class="flex justify-between items-center p-2 bg-gray-50 rounded"><span>大阪 曇り時々雨</span><span class="font-bold text-blue-500">26℃</span></div>
+                    <div class="flex justify-between items-center p-2 bg-gray-50 rounded"><span>福岡 晴れ時々曇り</span><span class="font-bold text-orange-500">29℃</span></div>
                 </div>
             </div>
 
-            <!-- Flashing Scam Banner Sidebar -->
-            <div class="bg-gradient-to-r from-red-600 to-yellow-500 p-4 rounded-2xl shadow-2xl border-4 border-white text-white text-center shake">
-                <span class="bg-black text-yellow-300 px-2 py-1 text-xs font-bold rounded">⚠️ 警告 ⚠️</span>
-                <p class="font-black text-xl mt-2">あなたのスマホ、<br>ウイルスに感染しています！</p>
-                <button onclick="spawnPopup()" class="mt-3 bg-white text-red-600 font-black px-4 py-2 rounded-full shadow-lg hover:bg-yellow-200 transition">
-                    今すぐ駆除する ＞
-                </button>
+            <!-- 為替・経済指標 -->
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-sm">
+                <h3 class="font-black text-sm text-blue-900 border-b pb-2 mb-3">📈 経済・マーケット指標</h3>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between"><span class="text-gray-600">ドル円 (USD/JPY)</span><span class="font-bold text-green-600">147.25円 <span class="text-xs">+0.42</span></span></div>
+                    <div class="flex justify-between"><span class="text-gray-600">日経平均株価</span><span class="font-bold text-red-600">38,420円 <span class="text-xs">-150</span></span></div>
+                    <div class="flex justify-between"><span class="text-gray-600">ビットコイン</span><span class="font-bold text-green-600">9,250,000円 <span class="text-xs">+2.4%</span></span></div>
+                </div>
             </div>
 
-            <!-- Ranking Box -->
-            <div class="bg-white/90 backdrop-blur border-4 border-yellow-500 rounded-2xl p-4 shadow-xl">
-                <h3 class="font-black text-lg text-yellow-600 border-b-2 border-yellow-200 pb-1 mb-2">👑 不毛なアクセスランキング</h3>
-                <ol class="space-y-2 text-sm font-bold">
-                    <li class="flex items-center space-x-2 bg-yellow-50 p-2 rounded"><span class="bg-yellow-400 text-white px-2 py-0.5 rounded">1</span><span>寝落ちして起きたら3日経ってた件</span></li>
-                    <li class="flex items-center space-x-2 bg-gray-50 p-2 rounded"><span class="bg-gray-400 text-white px-2 py-0.5 rounded">2</span><span>コンビニのコピー機で自分の顔スキャンする奴</span></li>
-                    <li class="flex items-center space-x-2 bg-orange-50 p-2 rounded"><span class="bg-orange-400 text-white px-2 py-0.5 rounded">3</span><span>「無職ですが何か？」日本代表インタビュー</span></li>
-                    <li class="flex items-center space-x-2 bg-white p-2 rounded"><span class="bg-gray-200 text-gray-700 px-2 py-0.5 rounded">4</span><span>AIに「今日の晩御飯なに？」と聞いて発狂</span></li>
+            <!-- アクセスランキング -->
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-sm">
+                <h3 class="font-black text-sm text-blue-900 border-b pb-2 mb-3">🔥 本日の注目記事ランキング</h3>
+                <ol class="space-y-3 text-sm font-bold">
+                    <li class="flex items-start space-x-2 pb-2 border-b border-gray-100">
+                        <span class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs">1</span>
+                        <span class="text-xs text-gray-800 hover:text-blue-600 cursor-pointer">「iPhone 17」のリーク情報まとめ：薄型モデルついに登場か</span>
+                    </li>
+                    <li class="flex items-start space-x-2 pb-2 border-b border-gray-100">
+                        <span class="bg-gray-400 text-white px-2 py-0.5 rounded text-xs">2</span>
+                        <span class="text-xs text-gray-800 hover:text-blue-600 cursor-pointer">Amazonセールで本当に買うべきコスパ最強ガジェット10選</span>
+                    </li>
+                    <li class="flex items-start space-x-2 pb-2 border-b border-gray-100">
+                        <span class="bg-amber-600 text-white px-2 py-0.5 rounded text-xs">3</span>
+                        <span class="text-xs text-gray-800 hover:text-blue-600 cursor-pointer">電気代の高騰を防ぐ！今すぐできるエアコン節電の裏技</span>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                        <span class="bg-gray-200 text-gray-700 px-2 py-0.5 rounded text-xs">4</span>
+                        <span class="text-xs text-gray-800 hover:text-blue-600 cursor-pointer">コンビニの新作スイーツを食べ比べ！一番美味しかったのはこれ</span>
+                    </li>
                 </ol>
             </div>
         </div>
 
-        <!-- Center Column: Main Content / News / Threads -->
-        <div class="lg:span col-span-2 space-y-6">
+        <!-- 中央カラム：ニュース・トレンド・ガジェット情報 -->
+        <div class="lg:col-span-2 space-y-6">
 
-            <!-- Featured Breaking Banner -->
-            <div class="bg-red-600 text-white p-6 rounded-3xl shadow-2xl border-4 border-yellow-300 relative overflow-hidden">
-                <div class="absolute -right-10 -bottom-10 text-9xl opacity-20 font-black">🔥</div>
-                <span class="bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-black">【特大スクープ】</span>
-                <h2 class="text-2xl md:text-3xl font-black mt-2 leading-snug">
-                    「猫がダンボールに入ると宇宙空間へワープする」物理学会が正式に認める
+            <!-- 注目のトップニュース大バナー -->
+            <div class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-6 rounded-2xl shadow-lg relative overflow-hidden">
+                <span class="bg-orange-500 text-white px-2.5 py-1 rounded text-xs font-black">注目ガジェット</span>
+                <h2 class="text-xl md:text-2xl font-black mt-2 leading-snug">
+                    Anker、最大140W出力に対応した新型モバイルバッテリーを発表。ノートPCも急速充電可能に
                 </h2>
-                <p class="text-sm mt-2 text-red-100">
-                    専門家「うちの飼い猫も昨日から行方不明です。おそらくアンドロメダ銀河にいます」
+                <p class="text-xs text-blue-200 mt-2">
+                    USB Power Delivery 3.1に対応し、複数のデバイスを同時に高速充電できるフラッグシップモデル。アウトドアや出張の強い味方。
                 </p>
-                <div class="mt-4 flex gap-2">
-                    <button onclick="alertBox('いいね！を押しました（+0pt）')" class="bg-white text-red-600 font-bold px-4 py-1.5 rounded-lg text-sm shadow hover:bg-yellow-100">❤️ 5.4万いいね</button>
-                    <button onclick="spawnPopup()" class="bg-black text-yellow-300 font-bold px-4 py-1.5 rounded-lg text-sm shadow hover:bg-gray-900">💬 爆笑コメント(999+)</button>
+                <div class="mt-4 flex gap-3">
+                    <button onclick="showAlert('詳細ページを開きます（モック）')" class="bg-white text-blue-900 font-bold px-4 py-1.5 rounded-lg text-xs shadow hover:bg-gray-100">記事を読む</button>
+                    <button onclick="showAlert('Amazonの販売ページに移動します（モック）')" class="bg-orange-500 text-white font-bold px-4 py-1.5 rounded-lg text-xs shadow hover:bg-orange-600">Amazonでチェック 🛒</button>
                 </div>
             </div>
 
-            <!-- Tab Content Sections -->
-            <div id="content-container" class="space-y-6">
+            <!-- ニュースフィード一覧 -->
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-sm space-y-4">
+                <h3 class="font-black text-lg text-blue-900 border-b pb-2 flex justify-between items-center">
+                    <span>📰 最新ニュース＆ライフハック</span>
+                    <span class="text-xs text-gray-400 font-normal">随時更新</span>
+                </h3>
 
-                <!-- Section: News Feed -->
-                <div class="tab-content bg-white/95 backdrop-blur border-4 border-purple-500 rounded-2xl p-4 shadow-xl">
-                    <h3 class="font-black text-xl text-purple-700 mb-4 flex items-center justify-between">
-                        <span>📰 虚構＆最新トレンドニュース</span>
-                        <span class="text-xs text-gray-500 font-normal">随時更新中（嘘）</span>
-                    </h3>
-                    <div id="news-list" class="space-y-4">
-                        <div class="border-b border-gray-200 pb-3">
-                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-bold">ライフハック</span>
-                            <h4 class="font-bold text-lg mt-1 hover:text-purple-600 cursor-pointer" onclick="spawnPopup()">カップラーメンの待ち時間「3分」を「180秒」に短縮する裏技が天才的すぎると話題</h4>
-                            <p class="text-xs text-gray-500 mt-1">10分前 | 閲覧数: 45,120</p>
-                        </div>
-                        <div class="border-b border-gray-200 pb-3">
-                            <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded font-bold">悲報</span>
-                            <h4 class="font-bold text-lg mt-1 hover:text-red-600 cursor-pointer" onclick="spawnPopup()">昨日買ったアイス、冷凍庫に入れたついでに存在を忘れて化石になる</h4>
-                            <p class="text-xs text-gray-500 mt-1">25分前 | 閲覧数: 89,210</p>
-                        </div>
-                        <div class="border-b border-gray-200 pb-3">
-                            <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded font-bold">経済</span>
-                            <h4 class="font-bold text-lg mt-1 hover:text-green-600 cursor-pointer" onclick="spawnPopup()">「お金持ちになりたい」と全財産をガチャにつぎ込んだ結果、SSRの草が生えた</h4>
-                            <p class="text-xs text-gray-500 mt-1">1時間前 | 閲覧数: 120,450</p>
-                        </div>
+                <!-- 記事カード1 -->
+                <div class="flex flex-col md:flex-row gap-4 pb-4 border-b border-gray-100 items-start">
+                    <div class="w-full md:w-36 h-24 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400 text-xs font-bold flex-shrink-0">
+                        [画像: ノートPC]
                     </div>
-                    <button onclick="loadMoreNews()" class="w-full mt-4 bg-purple-600 text-white py-2 rounded-xl font-bold hover:bg-purple-700 transition shadow">
-                        🔄 さらに無限にニュースを読み込む（地獄）
-                    </button>
-                </div>
-
-                <!-- Section: 2ch Thread Simulation -->
-                <div class="tab-content bg-white/95 backdrop-blur border-4 border-green-500 rounded-2xl p-4 shadow-xl">
-                    <h3 class="font-black text-xl text-green-700 mb-4">💬 ネットの反応（2ちゃんねる風まとめスレ）</h3>
-                    <div class="bg-gray-900 text-green-400 p-4 rounded-xl retro-font text-xs md:text-sm space-y-3 shadow-inner max-h-96 overflow-y-auto">
-                        <p><span class="text-yellow-400">1:</span> 名無しさん＠お腹いっぱい 2026/09/27(日) 19:00:00.00 ID:KAOS0</p>
-                        <p class="pl-4 text-white">またワイの知らないところで世界が滅びかけてるんだが</p>
-                        
-                        <p><span class="text-yellow-400">2:</span> 名無しさん＠お腹いっぱい 2026/09/27(日) 19:00:30.12 ID:PUDD1</p>
-                        <p class="pl-4 text-white">>>1 いつものことやろ。気にするな、プリン食え</p>
-                        
-                        <p><span class="text-yellow-400">3:</span> 名無しさん＠お腹いっぱい 2026/09/27(日) 19:01:15.88 ID:NEKO9</p>
-                        <p class="pl-4 text-white">うちの猫がさっきから壁に向かって威嚇してるんだが、これもう異世界からの侵略始まってるよな？</p>
-
-                        <p><span class="text-yellow-400">4:</span> 名無しさん＠お腹いっぱい 2026/09/27(日) 19:02:00.45 ID:GUMI3</p>
-                        <p class="pl-4 text-white">草。それ単に蚊がいるだけやろ</p>
-
-                        <p><span class="text-yellow-400">5:</span> 名無しさん＠お腹いっぱい 2026/09/27(日) 19:03:10.11 ID:ERROR</p>
-                        <p class="pl-4 text-red-400">このサイト情報量が多すぎて頭バグってきた助けてくれ</p>
-                    </div>
-                    <div class="mt-3 flex gap-2">
-                        <input type="text" placeholder="レスを書き込む（機能しないよ）" class="flex-1 border-2 border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-green-500">
-                        <button onclick="spawnPopup()" class="bg-green-600 text-white font-bold px-4 py-2 rounded-lg hover:bg-green-700 transition">書き込む</button>
+                    <div class="flex-1">
+                        <span class="text-[10px] bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-bold">PC・ガジェット</span>
+                        <h4 class="font-bold text-sm md:text-base mt-1 hover:text-blue-600 cursor-pointer" onclick="showAlert('記事詳細を開きます')">
+                            2026年秋：ビジネスパーソン必携の軽量モバイルノートPCおすすめ5選。バッテリー持ちを徹底比較
+                        </h4>
+                        <p class="text-xs text-gray-500 mt-1">
+                            持ち運びやすさと処理性能を両立した最新モデルを専門家がレビュー。重量1kg未満の軽量モデルを中心に厳選。
+                        </p>
+                        <div class="text-[11px] text-gray-400 mt-2">30分前 | 閲覧数: 12,400</div>
                     </div>
                 </div>
 
-                <!-- Section: Fortune Telling -->
-                <div class="tab-content bg-white/95 backdrop-blur border-4 border-pink-500 rounded-2xl p-4 shadow-xl">
-                    <h3 class="font-black text-xl text-pink-600 mb-2">🔮 今日のヤバい運勢ランキング</h3>
-                    <p class="text-xs text-gray-500 mb-4">あなたの星座をタップして運命の理不尽を知ろう</p>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                        <div onclick="showFortune('牡羊座', '大吉：道端で1億円拾うが、警察に届けて職質される')" class="bg-pink-50 border-2 border-pink-300 p-3 rounded-xl text-center cursor-pointer hover:bg-pink-100 transition">
-                            <span class="text-2xl">♈</span>
-                            <p class="font-bold text-sm mt-1">牡羊座</p>
-                        </div>
-                        <div onclick="showFortune('獅子座', '凶：靴下に穴が空いていることに夕方気づく')" class="bg-pink-50 border-2 border-pink-300 p-3 rounded-xl text-center cursor-pointer hover:bg-pink-100 transition">
-                            <span class="text-2xl">♌</span>
-                            <p class="font-bold text-sm mt-1">獅子座</p>
-                        </div>
-                        <div onclick="showFortune('天秤座', '大凶：スマホの充電が常に99%から減らない呪い')" class="bg-pink-50 border-2 border-pink-300 p-3 rounded-xl text-center cursor-pointer hover:bg-pink-100 transition">
-                            <span class="text-2xl">♎</span>
-                            <p class="font-bold text-sm mt-1">天秤座</p>
-                        </div>
-                        <div onclick="showFortune('魚座', '神吉：なぜか今日だけ世界があなたに優しい')" class="bg-pink-50 border-2 border-pink-300 p-3 rounded-xl text-center cursor-pointer hover:bg-pink-100 transition">
-                            <span class="text-2xl">♓</span>
-                            <p class="font-bold text-sm mt-1">魚座</p>
-                        </div>
+                <!-- 記事カード2 -->
+                <div class="flex flex-col md:flex-row gap-4 pb-4 border-b border-gray-100 items-start">
+                    <div class="w-full md:w-36 h-24 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400 text-xs font-bold flex-shrink-0">
+                        [画像: マネー]
                     </div>
-                    <div id="fortune-result" class="mt-4 p-4 bg-pink-100 rounded-xl text-pink-900 font-bold hidden border-2 border-pink-400"></div>
+                    <div class="flex-1">
+                        <span class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded font-bold">マネー・経済</span>
+                        <h4 class="font-bold text-sm md:text-base mt-1 hover:text-green-600 cursor-pointer" onclick="showAlert('記事詳細を開きます')">
+                            新NISAの成長投資枠で選ばれている高配当株ファンドの特徴と、初心者が陥りがちな注意点
+                        </h4>
+                        <p class="text-xs text-gray-500 mt-1">
+                            資産形成の定番となった新NISA。インデックス投資にプラスして高配当株を組み合わせるメリットとは？
+                        </p>
+                        <div class="text-[11px] text-gray-400 mt-2">1時間前 | 閲覧数: 8,920</div>
+                    </div>
                 </div>
 
+                <!-- 記事カード3 -->
+                <div class="flex flex-col md:flex-row gap-4 pb-4 border-b border-gray-100 items-start">
+                    <div class="w-full md:w-36 h-24 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400 text-xs font-bold flex-shrink-0">
+                        [画像: グルメ]
+                    </div>
+                    <div class="flex-1">
+                        <span class="text-[10px] bg-orange-100 text-orange-700 px-2 py-0.5 rounded font-bold">グルメ・ライフ</span>
+                        <h4 class="font-bold text-sm md:text-base mt-1 hover:text-orange-600 cursor-pointer" onclick="showAlert('記事詳細を開きます')">
+                            コンビニ大手3社の「秋の新作モンブラン」を食べ比べ！一番コスパが良いのはどれ？
+                        </h4>
+                        <p class="text-xs text-gray-500 mt-1">
+                            秋の味覚の王様・栗を使ったスイーツが続々と登場。カロリーや価格、クリームの濃厚さを徹底チェック。
+                        </p>
+                        <div class="text-[11px] text-gray-400 mt-2">2時間前 | 閲覧数: 15,600</div>
+                    </div>
+                </div>
+
+                <!-- 記事カード4 -->
+                <div class="flex flex-col md:flex-row gap-4 items-start">
+                    <div class="w-full md:w-36 h-24 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400 text-xs font-bold flex-shrink-0">
+                        [画像: 家電]
+                    </div>
+                    <div class="flex-1">
+                        <span class="text-[10px] bg-purple-100 text-purple-700 px-2 py-0.5 rounded font-bold">家電・生活</span>
+                        <h4 class="font-bold text-sm md:text-base mt-1 hover:text-purple-600 cursor-pointer" onclick="showAlert('記事詳細を開きます')">
+                            水拭きとゴミ吸い取りを同時にこなす！最新ロボット掃除機の賢すぎる機能と選び方ガイド
+                        </h4>
+                        <p class="text-xs text-gray-500 mt-1">
+                            家事の負担を劇的に減らしてくれるロボット掃除機。自動ゴミ収集ドック付きモデルの進化が止まらない。
+                        </p>
+                        <div class="text-[11px] text-gray-400 mt-2">3時間前 | 閲覧数: 6,430</div>
+                    </div>
+                </div>
+
+                <button onclick="loadMoreNews()" class="w-full mt-4 bg-slate-100 text-slate-700 py-2.5 rounded-xl font-bold hover:bg-slate-200 transition text-sm">
+                    👇 もっとニュースを読み込む（無限スクロール風）
+                </button>
             </div>
+
+            <!-- ネットの話題・SNSトレンドまとめ -->
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-sm space-y-3">
+                <h3 class="font-black text-lg text-blue-900 border-b pb-2">💬 SNS・ネットの話題まとめ</h3>
+                <div class="space-y-2 text-xs md:text-sm font-medium">
+                    <div class="p-2.5 bg-gray-50 rounded-lg flex justify-between items-center hover:bg-gray-100 cursor-pointer" onclick="showAlert('スレッドを開きます')">
+                        <span>「在宅ワークで買って本当によかった家具・ガジェット」スレが有益すぎる件</span>
+                        <span class="text-gray-400 text-xs">💬 420レス</span>
+                    </div>
+                    <div class="p-2.5 bg-gray-50 rounded-lg flex justify-between items-center hover:bg-gray-100 cursor-pointer" onclick="showAlert('スレッドを開きます')">
+                        <span>一人暮らしの自炊で一番コスパが良い食材、結局「鶏胸肉」と「キャベツ」に落ち着く</span>
+                        <span class="text-gray-400 text-xs">💬 890レス</span>
+                    </div>
+                    <div class="p-2.5 bg-gray-50 rounded-lg flex justify-between items-center hover:bg-gray-100 cursor-pointer" onclick="showAlert('スレッドを開きます')">
+                        <span>今季の秋アニメ、豊作すぎて何を見るか本気で悩むオタクたち</span>
+                        <span class="text-gray-400 text-xs">💬 1,240レス</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Right Sidebar: Ads & Time Sales -->
+        <!-- 右サイドバー：タイムセール・お買い得情報 -->
         <div class="space-y-6">
-            <!-- Time Sale Banner -->
-            <div class="bg-gradient-to-br from-yellow-300 to-red-500 p-4 rounded-2xl shadow-2xl border-4 border-black text-black">
-                <div class="flex justify-between items-center bg-black text-yellow-300 px-2 py-1 rounded text-xs font-black">
+            <!-- タイムセール会場 -->
+            <div class="bg-gradient-to-br from-amber-400 to-orange-500 p-4 rounded-2xl shadow-md text-gray-900">
+                <div class="flex justify-between items-center bg-black text-yellow-300 px-2 py-1 rounded text-xs font-black mb-3">
                     <span>⚡ 24時間限定タイムセール</span>
-                    <span id="countdown" class="blink font-mono">00:03:42</span>
+                    <span id="countdown" class="font-mono">03:45:12</span>
                 </div>
-                <div class="bg-white/90 p-3 rounded-xl mt-3 text-center border-2 border-black">
-                    <div class="bg-gray-200 h-28 rounded flex items-center justify-center font-bold text-gray-500 mb-2 border">
-                        [謎の健康器具画像]
+                <div class="bg-white p-3 rounded-xl text-center shadow-inner">
+                    <div class="bg-gray-200 h-28 rounded-lg flex items-center justify-center font-bold text-gray-500 mb-2 text-xs">
+                        [商品画像: ワイヤレスイヤホン]
                     </div>
-                    <h4 class="font-black text-sm">履くだけで10kg痩せる（気がする）怪しいスリッパ</h4>
-                    <p class="text-red-600 font-black text-lg mt-1">980円 <span class="line-through text-gray-400 text-xs">定価50,000円</span></p>
-                    <button onclick="spawnPopup()" class="w-full mt-2 bg-red-600 text-white font-black py-2 rounded-lg hover:bg-red-700 transition shadow">
-                        今すぐカートに入れる 🛒
+                    <h4 class="font-black text-sm text-gray-800">ノイズキャンセリング搭載 完全ワイヤレスイヤホン</h4>
+                    <p class="text-red-600 font-black text-lg mt-1">4,980円 <span class="line-through text-gray-400 text-xs">参考価格 12,800円</span></p>
+                    <button onclick="showAlert('セール会場へ移動します')" class="w-full mt-3 bg-red-600 text-white font-black py-2 rounded-lg hover:bg-red-700 transition text-sm shadow">
+                        今すぐ購入する 🛒
                     </button>
                 </div>
             </div>
 
-            <!-- More Ads -->
-            <div class="bg-white/90 backdrop-blur border-4 border-orange-500 rounded-2xl p-4 shadow-xl space-y-3">
-                <h3 class="font-black text-sm text-orange-600 border-b pb-1">💡 スポンサーリンク（広告）</h3>
-                <div class="p-2 bg-orange-50 rounded border border-orange-200 text-xs cursor-pointer hover:bg-orange-100" onclick="spawnPopup()">
-                    <span class="text-red-600 font-bold">[PR]</span> 英語を3分で完璧に忘れる驚異のメソッドはこちら
+            <!-- お得なクーポン・キャンペーン情報 -->
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-sm space-y-3">
+                <h3 class="font-black text-sm text-blue-900 border-b pb-1">🏷️ 本日のおすすめクーポン</h3>
+                <div class="p-2.5 bg-orange-50 border border-orange-200 rounded-lg text-xs cursor-pointer hover:bg-orange-100" onclick="showAlert('クーポンコードをコピーしました')">
+                    <div class="font-bold text-orange-700">【Amazon】対象家電が最大20%OFF</div>
+                    <div class="text-gray-500 mt-0.5">レジにてクーポン適用（9月30日まで）</div>
                 </div>
-                <div class="p-2 bg-orange-50 rounded border border-orange-200 text-xs cursor-pointer hover:bg-orange-100" onclick="spawnPopup()">
-                    <span class="text-red-600 font-bold">[PR]</span> 前世の職業が「大根」だった件について診断する
+                <div class="p-2.5 bg-blue-50 border border-blue-200 rounded-lg text-xs cursor-pointer hover:bg-blue-100" onclick="showAlert('クーポンコードをコピーしました')">
+                    <div class="font-bold text-blue-700">【楽天市場】お買い物マラソン連動</div>
+                    <div class="text-gray-500 mt-0.5">ショップ買い回りでポイント最大10倍</div>
                 </div>
-                <div class="p-2 bg-orange-50 rounded border border-orange-200 text-xs cursor-pointer hover:bg-orange-100" onclick="spawnPopup()">
-                    <span class="text-red-600 font-bold">[PR]</span> あなたのブラウザは本当に安全ですか？一発診断
+                <div class="p-2.5 bg-green-50 border border-green-200 rounded-lg text-xs cursor-pointer hover:bg-green-100" onclick="showAlert('クーポンコードをコピーしました')">
+                    <div class="font-bold text-green-700">【Yahoo!ショッピング】日替わりクーポン</div>
+                    <div class="text-gray-500 mt-0.5">飲食店・日用品で使える半額クーポン配布中</div>
                 </div>
             </div>
 
-            <!-- Meaningless Counter Widget -->
-            <div class="bg-black text-green-400 retro-font p-4 rounded-2xl border-4 border-green-500 shadow-xl text-center">
-                <p class="text-xs text-gray-400">総閲覧回数（意味なし）</p>
-                <div class="text-3xl font-black tracking-widest mt-1 text-yellow-300">0089314514</div>
-                <p class="text-[10px] text-green-500 mt-1">あなたは記念すべき 8,931,4514 人目の訪問者です🎉</p>
+            <!-- スポンサーリンク -->
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-sm space-y-3">
+                <h3 class="font-black text-xs text-gray-400 uppercase tracking-wider">スポンサーリンク</h3>
+                <div class="p-3 bg-gray-50 rounded-lg border text-xs cursor-pointer hover:bg-gray-100">
+                    <span class="text-blue-600 font-bold">[PR]</span> プログラミングを自宅で学べるオンラインスクール無料カウンセリング受付中
+                </div>
+                <div class="p-3 bg-gray-50 rounded-lg border text-xs cursor-pointer hover:bg-gray-100">
+                    <span class="text-blue-600 font-bold">[PR]</span> 全身脱毛サロンの無料カウンセリング予約はこちらから
+                </div>
+                <div class="p-3 bg-gray-50 rounded-lg border text-xs cursor-pointer hover:bg-gray-100">
+                    <span class="text-blue-600 font-bold">[PR]</span> 自宅でできる本格フィットネスバイク月額サブスク
+                </div>
             </div>
         </div>
 
     </main>
 
-    <footer class="max-w-7xl mx-auto mt-12 px-4 text-center text-white text-xs space-y-3">
-        <div class="flex flex-wrap justify-center gap-4 bg-black/60 p-4 rounded-2xl backdrop-blur">
-            <a href="#" onclick="spawnPopup()" class="hover:underline">利用規約</a> |
-            <a href="#" onclick="spawnPopup()" class="hover:underline">プライバシーポリシー</a> |
-            <a href="#" onclick="spawnPopup()" class="hover:underline">運営会社（謎のビル）</a> |
-            <a href="#" onclick="spawnPopup()" class="hover:underline">お問い合わせ（受付拒否）</a> |
-            <a href="#" onclick="spawnPopup()" class="hover:underline">RSSフィード</a>
+    <!-- フッター -->
+    <footer class="max-w-7xl mx-auto mt-12 px-4 text-center text-gray-600 text-xs space-y-3">
+        <div class="flex flex-wrap justify-center gap-4 bg-white p-4 rounded-xl shadow-sm border">
+            <a href="#" onclick="showAlert('利用規約ページ')" class="hover:underline">利用規約</a> |
+            <a href="#" onclick="showAlert('プライバシーポリシーページ')" class="hover:underline">プライバシーポリシー</a> |
+            <a href="#" onclick="showAlert('運営会社ページ')" class="hover:underline">運営会社について</a> |
+            <a href="#" onclick="showAlert('お問い合わせページ')" class="hover:underline">お問い合わせ</a> |
+            <a href="#" onclick="showAlert('広告掲載について')" class="hover:underline">広告掲載のご案内</a>
         </div>
-        <p class="font-black text-yellow-300">
-            Copyright (C) 2026 Chaos All-In-One Portal. All Rights Reserved. ※掲載情報はすべてフィクションまたは電波です。
+        <p class="font-bold text-gray-500">
+            Copyright (C) 2026 トレンド大百科.com All Rights Reserved.
         </p>
     </footer>
 
-    <!-- Popup Modal (Triggered by clutter interaction) -->
-    <div id="popup-modal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white border-8 border-red-600 p-6 rounded-3xl max-w-md w-full text-center space-y-4 shadow-2xl animate-bounce">
-            <div class="text-red-600 font-black text-3xl">🚨 おめでとうございます！ 🚨</div>
-            <p class="font-bold text-gray-800 text-sm">
-                あなたは本日の超ラッキービジターに選ばれました！今すぐ下のボタンを押して「謎のポイント（0円分）」を受け取ってください！
-            </p>
-            <div class="bg-yellow-100 p-3 rounded-xl border border-yellow-300 text-xs text-yellow-800 font-bold">
-                ※ブラウザを閉じてもこの画面は一生ついてきます。
-            </div>
-            <div class="flex gap-2">
-                <button onclick="closePopup()" class="flex-1 bg-red-600 text-white font-black py-3 rounded-xl hover:bg-red-700 transition shadow">
-                    絶対に受け取る 🎉
-                </button>
-                <button onclick="spawnAnotherPopup()" class="flex-1 bg-gray-300 text-gray-800 font-black py-3 rounded-xl hover:bg-gray-400 transition shadow">
-                    さらに増やす 💥
-                </button>
-            </div>
-        </div>
+    <!-- カスタムメッセージボックス（alert代わり） -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 text-white font-bold px-4 py-3 rounded-xl shadow-2xl z-50 transition-all duration-300 transform translate-y-20 opacity-0 border border-slate-700 text-sm">
+        通知メッセージ
     </div>
 
     <script>
-        // Real-time Stock / Ticker Fluctuations
-        setInterval(() => {
-            const catPrice = Math.floor(10000 + Math.random() * 5000);
-            const sleepPrice = Math.floor(500 + Math.random() * 1000);
-            document.getElementById('coin-cat').innerText = catPrice.toLocaleString() + '円';
-            document.getElementById('coin-sleep').innerText = sleepPrice.toLocaleString() + '円';
-
-            // Random visitor increment
-            const counterEl = document.getElementById('counter');
-            if(counterEl) {
-                let current = parseInt(counterEl.innerText);
-                counterEl.innerText = (current + Math.floor(Math.random() * 5) + 1).toLocaleString();
-            }
-        }, 2000);
-
-        // Countdown timer simulation
-        let totalSeconds = 222;
+        // カウントダウンタイマーシミュレーション
+        let totalSeconds = 13512;
         setInterval(() => {
             if(totalSeconds > 0) totalSeconds--;
-            let m = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+            let h = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+            let m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
             let s = String(totalSeconds % 60).padStart(2, '0');
             const cd = document.getElementById('countdown');
-            if(cd) cd.innerText = `00:${m}:${s}`;
+            if(cd) cd.innerText = `${h}:${m}:${s}`;
         }, 1000);
 
-        // Popup logic
-        function spawnPopup() {
-            document.getElementById('popup-modal').classList.remove('hidden');
-        }
-        function closePopup() {
-            document.getElementById('popup-modal').classList.add('hidden');
-            // Spawn another one immediately for maximum chaos
-            setTimeout(spawnPopup, 500);
-        }
-        function spawnAnotherPopup() {
-            alert('ポップアップが増殖しました！おめでとうございます！');
-            spawnPopup();
+        // 通知トースト表示関数
+        function showAlert(msg) {
+            const toast = document.getElementById('toast');
+            toast.innerText = msg;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 2500);
         }
 
-        // Custom alert simulation without real alert()
-        function alertBox(msg) {
-            const div = document.createElement('div');
-            div.className = 'fixed bottom-4 right-4 bg-black text-yellow-300 font-bold px-4 py-3 rounded-xl shadow-2xl z-50 border-2 border-yellow-400 animate-pulse';
-            div.innerText = msg;
-            document.body.appendChild(div);
-            setTimeout(() => div.remove(), 2500);
-        }
-
-        // Fortune selector
-        function showFortune(sign, text) {
-            const res = document.getElementById('fortune-result');
-            res.classList.remove('hidden');
-            res.innerHTML = `<span class="text-lg">【${sign}の結果】</span><br>${text}`;
-        }
-
-        // Infinite load news simulation
+        // さらにニュースを追加するダミー関数
         function loadMoreNews() {
-            const list = document.getElementById('news-list');
-            const items = [
-                { tag: '宇宙', title: '火星で居酒屋を開業した日本人、初日から宇宙人しか来ないトラブル', time: 'たった今' },
-                { tag: '速報', title: '地球の自転スピードが急に「1.2倍」になってしまい、足元がちょっと浮く', time: '1分前' },
-                { tag: '猫', title: '猫専用のSNSを作ったら、全投稿が「魚」「寝る」「人間めしべ」になった', time: '3分前' }
-            ];
-            items.forEach(item => {
-                const d = document.createElement('div');
-                d.className = 'border-b border-gray-200 pb-3 mt-3';
-                d.innerHTML = `<span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded font-bold">${item.tag}</span>
-                               <h4 class="font-bold text-lg mt-1 hover:text-purple-600 cursor-pointer" onclick="spawnPopup()">${item.title}</h4>
-                               <p class="text-xs text-gray-500 mt-1">${item.time} | 閲覧数: 99,999</p>`;
-                list.appendChild(d);
-            });
-            alertBox('さらに地獄のようなニュースが追加されました');
+            showAlert('新しいニュースをさらに読み込みました');
         }
-
-        // Random spontaneous popups to increase chaos
-        setTimeout(() => {
-            spawnPopup();
-        }, 5000);
     </script>
 </body>
 </html>
